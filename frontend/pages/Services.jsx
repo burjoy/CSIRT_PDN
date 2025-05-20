@@ -15,6 +15,7 @@ const Services = () => {
           <h3 className="text-xl font-bold mb-4">Analytics</h3>
           <p className="text-gray-600">Data-driven insights for informed decision making.</p>
         </div>
+        <p>Inget, ini cuman template, tar ubah lagi</p>
       </div>
     </div>
   );

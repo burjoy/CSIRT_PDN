@@ -19,6 +19,7 @@ const Organisasi = () => {
           <h3 className="text-xl font-bold mb-4">Bendahara</h3>
           <p className="text-gray-600">Pak BA</p>
         </div>
+        <p>Inget, ini cuman template, tar ubah lagi</p>
       </div>
     </div>
   );
