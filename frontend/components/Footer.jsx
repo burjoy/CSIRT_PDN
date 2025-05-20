@@ -7,7 +7,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
             <p className="text-gray-300">
-              Providing innovative solutions and exceptional service since yyyy.
+              Komdigi merupakan kementrian yang bergerak di bidang digitalisasi dan teknologi informasi. Kami berkomitmen untuk memberikan solusi terbaik bagi masyarakat dan pemerintah dalam mengadopsi teknologi digital.
             </p>
           </div>
           <div>
