@@ -27,10 +27,10 @@ const Header = () => {
             <Link to="/rfc" className="text-gray-700 hover:text-gray-900 px-3 py-2">
               RFC-2350
             </Link>
-            {/* <Link to="/contact" className="text-gray-700 hover:text-gray-900 px-3 py-2">
+            <Link to="/contact" className="text-gray-700 hover:text-gray-900 px-3 py-2">
               Contact
-            </Link> */}
-            <a href=''>Contact</a>
+            </Link>
+            {/* <a href=''>Contact</a> */}
           </div>
         </div>
       </nav>
