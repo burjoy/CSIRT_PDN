@@ -5,6 +5,7 @@ import NotFound from '../pages/NotFound';
 import Services from '../pages/Services';
 import Organisasi from '../pages/Organisasi';
 import Contact from '../pages/Contact';
+import GuestForm from '../pages/GuestForm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/organisasi" element={<Organisasi />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/forms" element={<GuestForm />} /> 
         </Routes>
       </Layout>
     </Router>
