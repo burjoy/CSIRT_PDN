@@ -10,10 +10,10 @@ const GuestForm = () => {
     }, [state]);
     return(
         <>
-            <div className="container mx-auto px-4 py-12 text-center self-center">
+            <div className="min-h-screen flex items-center justify-center">
                 <form className="" onSubmit={e => e.preventDefault()}>
                     <h1 className="text-4xl font-bold text-center mb-12">Guest Form</h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="text-center">
                         <div className="bg-white p-6 rounded-lg shadow-md">
                             <label className="block mb-4">
                                 Name:
