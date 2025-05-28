@@ -17,31 +17,31 @@ const Header = () => {
           <ul class="flex gap-3 md:gap-5 lg:gap-10">
             <Link
               to="/"
-              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Beranda
             </Link>
             <Link
               to="/organisasi"
-              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Profil
             </Link>
             <Link
               to="/rfc"
-              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               CSIRT-PDN
             </Link>
             <Link
               to="/services"
-              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Layanan
             </Link>
             <Link
               to="/activity"
-              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Kegiatan
             </Link>
@@ -93,10 +93,10 @@ const Header = () => {
                 y2="3.46666"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#C0B7E8"></stop>
+                <stop stopColor="#C0B7E8"></stop>
                 <stop
                   offset="1"
-                  stop-color="#8176AF"
+                  stopColor="#8176AF"
                 ></stop>
               </linearGradient>
               <linearGradient
@@ -107,10 +107,10 @@ const Header = () => {
                 y2="26"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#C0B7E8"></stop>
+                <stop stopColor="#C0B7E8"></stop>
                 <stop
                   offset="1"
-                  stop-color="#8176AF"
+                  stopColor="#8176AF"
                 ></stop>
               </linearGradient>
               <linearGradient
@@ -121,10 +121,10 @@ const Header = () => {
                 y2="13"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#C0B7E8"></stop>
+                <stop stopColor="#C0B7E8"></stop>
                 <stop
                   offset="1"
-                  stop-color="#8176AF"
+                  stopColor="#8176AF"
                 ></stop>
               </linearGradient>
             </defs>
