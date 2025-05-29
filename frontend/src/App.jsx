@@ -7,6 +7,7 @@ import Organisasi from "../pages/Organisasi";
 import Contact from "../pages/Contact";
 import Activity from "../pages/Activity";
 
+
 function App() {
   return (
     <Router>
