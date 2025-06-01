@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
-import Logo from "../src/assets/logo_komdigi.png";
+import Logo from "../src/assets/react.svg";
 
 //Komponen header
 const Header = () => {
