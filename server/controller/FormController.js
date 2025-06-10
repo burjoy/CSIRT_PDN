@@ -16,6 +16,12 @@ const FormController = async (req, res) => {
             const newData = { instansi, email, pesan, waktu };
             formsDB.forms_action([...formsDB.forms, newData]);
         }
+        else{
+            const newPesanData = foundInstansi.pesan.push(pesan);
+            // foundInstansi.pesan = newData;
+            formsDB.forms_action([...formsDB.forms, newPesanData]);
+            // console.log(foundInstansi.pesan.push(pesan));
+        }
         console.log(foundInstansi);
         // Return the forms data
         res.status(200).json(formsDB.forms);
