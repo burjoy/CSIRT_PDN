@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "category": "Berita",
+    "title": "CIPROMOX",
+    "desc": "Labore dolore deserunt cillum cupidatat culpa laboris dolor nisi nostrud. Voluptate reprehenderit anim excepteur enim qui incididunt adipisicing et mollit et aliqua veniam voluptate aliquip. Officia labore voluptate dolor fugiat ut dolor ipsum aliquip aliqua amet sunt aute.\r\n",
+    "month": "Jun",
+    "day": "21",
+    "author": "Dadang"
+  },
+  {
+    "id": 1,
+    "category": "Berita",
+    "title": "SULTRAXIN",
+    "desc": "Velit et ad quis reprehenderit pariatur incididunt ipsum velit ullamco eu sint. Eu adipisicing consequat voluptate magna do exercitation ullamco voluptate deserunt. Consectetur consectetur amet veniam voluptate quis id anim culpa consectetur ad excepteur reprehenderit aliqua. Esse non ipsum sunt ut reprehenderit irure.\r\n",
+    "month": "Jun",
+    "day": "21",
+    "author": "Dadang"
+  },
+  {
+    "id": 2,
+    "category": "Berita",
+    "title": "HANDSHAKE",
+    "desc": "Aute consequat nostrud cupidatat laboris ut occaecat. In aute adipisicing labore do excepteur do minim. Commodo proident magna enim reprehenderit mollit. Anim magna occaecat dolor veniam laborum ea fugiat deserunt.\r\n",
+    "month": "Jun",
+    "day": "21",
+    "author": "Dadang"
+  },
+  {
+    "id": 3,
+    "category": "Berita",
+    "title": "ACCRUEX",
+    "desc": "Irure dolor magna sint in esse nostrud id reprehenderit culpa sit adipisicing tempor. Anim in est ad dolor ex dolor ipsum veniam mollit ex pariatur. Est dolor pariatur ad sunt. Lorem eiusmod duis fugiat incididunt ad quis est minim enim anim consequat. Eu non sit aliquip proident commodo. Cupidatat ut irure ullamco nulla irure cillum commodo enim aliqua excepteur.\r\n",
+    "month": "Jun",
+    "day": "21",
+    "author": "Dadang"
+  },
+  {
+    "id": 4,
+    "category": "Berita",
+    "title": "RUBADUB",
+    "desc": "Irure cillum eu aliquip in sit consectetur ex dolor nostrud cillum est in id. Labore dolor nisi qui est eiusmod sunt dolor ipsum voluptate ut nisi ut exercitation. Nostrud cupidatat irure qui tempor sit in cupidatat sint cillum occaecat sunt duis sunt.\r\n",
+    "month": "Jun",
+    "day": "21",
+    "author": "Dadang"
+  },
+  {
+    "id": 5,
+    "category": "Berita",
+    "title": "RECRISYS",
+    "desc": "Nostrud Lorem consequat laborum occaecat eiusmod nulla esse eu incididunt. Esse aute ipsum cupidatat tempor excepteur occaecat est id voluptate magna laboris. Sunt aute minim sunt est do ad ex esse nostrud quis. Pariatur magna officia exercitation tempor ut consequat quis pariatur ullamco ut pariatur excepteur. Deserunt anim magna voluptate proident eiusmod eiusmod mollit nulla excepteur deserunt eu. Elit voluptate sunt incididunt Lorem.\r\n",
+    "month": "Jun",
+    "day": "21",
+    "author": "Dadang"
+  }
+]
