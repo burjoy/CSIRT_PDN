@@ -3,6 +3,26 @@ import { useReducer } from "react";
 
 const Contact = () => {
   const [state, dispatch] = useReducer(StateReducer, initial_state);
+  const handleSendData = async () => {
+    try {
+      const params = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          instansi: state.name,
+          email: state.email,
+          pesan: state.message,
+          waktu: new Date().toISOString()
+      })}
+      const response = await fetch('http://localhost:3000/forms', params);
+      console.log(response);
+    } catch (error) {
+      console.error("Error sending data:", error);
+      
+    }
+  }
   return (
     <section class="text-gray-600 body-font relative">
       <div class="bg-white rounded-md container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -90,7 +110,10 @@ const Contact = () => {
               onChange={(e) => dispatch({ type: 'SET_MESSAGE', payload: e.target.value })}
             ></textarea>
           </div>
-          <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" onClick={() => {dispatch({ type: 'RESET_FORM' });console.log(state);}}>
+          <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" onClick={() => {
+            handleSendData();
+            dispatch({ type: 'RESET_FORM' });
+            console.log(state);}}>
             Kirim
           </button>
           <p class="text-xs text-gray-500 mt-3">
