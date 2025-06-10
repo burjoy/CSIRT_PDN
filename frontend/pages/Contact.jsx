@@ -1,4 +1,8 @@
+import { StateReducer, initial_state } from "../state_management/StateReducer";
+import { useReducer } from "react";
+
 const Contact = () => {
+  const [state, dispatch] = useReducer(StateReducer, initial_state);
   return (
     <section class="text-gray-600 body-font relative">
       <div class="bg-white rounded-md container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -51,6 +55,8 @@ const Contact = () => {
               id="name"
               name="name"
               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
+              onChange={(e) => dispatch({ type: 'SET_NAME', payload: e.target.value })}
             />
           </div>
           <div class="relative mb-4">
@@ -65,6 +71,8 @@ const Contact = () => {
               id="email"
               name="email"
               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
+              onChange={(e) => dispatch({ type: 'SET_EMAIL', payload: e.target.value })}
             />
           </div>
           <div class="relative mb-4">
@@ -78,9 +86,11 @@ const Contact = () => {
               id="message"
               name="message"
               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              required
+              onChange={(e) => dispatch({ type: 'SET_MESSAGE', payload: e.target.value })}
             ></textarea>
           </div>
-          <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+          <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" onClick={() => {dispatch({ type: 'RESET_FORM' });console.log(state);}}>
             Kirim
           </button>
           <p class="text-xs text-gray-500 mt-3">
