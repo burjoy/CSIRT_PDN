@@ -18,8 +18,9 @@ const FormController = async (req, res) => {
         }
         else{
             const newPesanData = foundInstansi.pesan.push(pesan);
+            const newTimeData = foundInstansi.waktu.push(waktu);
             // foundInstansi.pesan = newData;
-            formsDB.forms_action([...formsDB.forms, newPesanData]);
+            formsDB.forms_action([...formsDB.forms, newPesanData, newTimeData]);
             // console.log(foundInstansi.pesan.push(pesan));
         }
         console.log(foundInstansi);
