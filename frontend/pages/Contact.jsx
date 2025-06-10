@@ -13,8 +13,8 @@ const Contact = () => {
         body: JSON.stringify({
           instansi: state.name,
           email: state.email,
-          pesan: state.message,
-          waktu: new Date().toISOString()
+          pesan: [state.message],
+          waktu: [new Date().toISOString()]
       })}
       const response = await fetch('http://localhost:3000/forms', params);
       console.log(response);
