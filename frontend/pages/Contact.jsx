@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <section class="text-gray-600 body-font relative">
-      <div class="bg-white rounded-md container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
+    <section class="bg-gray-900 text-gray-600 body-font relative">
+      <div class="bg-gray-900 rounded-md container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
         <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
@@ -10,39 +10,37 @@ const Contact = () => {
             title="map"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jalan%20Merdeka%20Barat%20No.9+(Kementerian%20Komunikasi%20dan%20Digital%20Republik%20Indonesia)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
-          <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          <div class="bg-gray-700 relative flex flex-wrap py-6 rounded shadow-md">
             <div class="lg:w-1/2 px-6">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
+              <h2 class="title-font font-semibold text-white tracking-widest text-xs">
                 Alamat
               </h2>
-              <p class="mt-1">
+              <p class="text-white mt-1">
                 Jl. Medan Mereda Barat No. 9<br />
                 Jakarta Pusat 10110
               </p>
             </div>
             <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
+              <h2 class="title-font font-semibold text-white tracking-widest text-xs">
                 Surel
               </h2>
               <a class="text-blue-500 leading-relaxed">csirt-pdn@email.com</a>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+              <h2 class="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 Telepon
               </h2>
-              <p class="leading-relaxed">123-456-7890</p>
+              <p class="text-white leading-relaxed">123-456-7890</p>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-            Kontak
-          </h2>
-          <p class="leading-relaxed mb-5 text-gray-600">
+        <div class="lg:w-1/3 md:w-1/2 bg-gray-900 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <h2 class="text-white text-lg mb-1 font-medium title-font">Kontak</h2>
+          <p class="leading-relaxed mb-5 text-white">
             Hubungi kami terkait pertanyaan atau aduan siber
           </p>
           <div class="relative mb-4">
             <label
               htmlFor="name"
-              class="leading-7 text-sm text-gray-600"
+              class="leading-7 text-sm text-white"
             >
               Nama Instansi
             </label>
@@ -56,7 +54,7 @@ const Contact = () => {
           <div class="relative mb-4">
             <label
               htmlFor="email"
-              class="leading-7 text-sm text-gray-600"
+              class="leading-7 text-sm text-white"
             >
               Surel
             </label>
@@ -70,7 +68,7 @@ const Contact = () => {
           <div class="relative mb-4">
             <label
               htmlFor="message"
-              class="leading-7 text-sm text-gray-600"
+              class="leading-7 text-sm text-white"
             >
               Pesan
             </label>

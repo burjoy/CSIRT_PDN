@@ -1,6 +1,6 @@
 const Organisasi = () => {
   return (
-    <section class="text-gray-600 body-font">
+    <section class="bg-gray-900 text-white body-font">
       <div class="container px-5 py-5 mx-auto flex flex-col">
         <div class="lg:w-4/6 mx-auto">
           <div class="rounded-lg h-64 overflow-hidden">
@@ -12,7 +12,7 @@ const Organisasi = () => {
           </div>
           <div class="flex flex-col sm:flex-row mt-10">
             <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-              <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+              <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -31,34 +31,32 @@ const Organisasi = () => {
                 </svg>
               </div>
               <div class="flex flex-col items-center text-center justify-center">
-                <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
+                <h2 class="font-medium title-font mt-4 text-white text-lg">
                   PDN - CSIRT
                 </h2>
                 <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-4"></div>
                 <p class="text-base">
-                  PDN-CSIRT adalah tim respons insiden keamanan siber yang
-                  bertugas melindungi infrastruktur teknologi informasi PDN dari
-                  berbagai ancaman siber. Sebagai bagian dari komitmen PDN dalam
-                  menjaga keamanan informasi, PDN-CSIRT menyediakan layanan
-                  deteksi, pencegahan, penanganan insiden, dan peningkatan
-                  kesadaran keamanan siber untuk memastikan operasional layanan
-                  PDN tetap andal dan terlindungi
+                  Merupakan tim respons insiden keamanan siber yang bertugas
+                  melindungi infrastruktur teknologi informasi PDN dari berbagai
+                  ancaman siber.
                 </p>
               </div>
             </div>
             <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
               <h2 class="text-xl font-bold text-center">Visi</h2>
               <p class="leading-relaxed text-lg mb-4">
-                Visi PDN-CSIRT adalah Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia eum natus omnis saepe odio at
-                repudiandae rem placeat libero perferendis.
+                Visi PDN-CSIRT adalah Mewujudkan layanan infrastruktur dan
+                sistem elektronik pada Pusat Data Nasional (PDN) yang aman,
+                andal, dan bertanggung jawab.
               </p>
               <h2 class="text-xl font-bold text-center">Misi</h2>
               <p class="leading-relaxed text-lg mb-4">
-                <li>Misi satu</li>
-                <li>Misi dua</li>
-                <li>Misi tiga</li>
-                <li>Misi empat</li>
+                <li>Memastikan keamanan data dan informasi.</li>
+                <li>Menerapkan standar teknis dan prosedur keamanan SPBE.</li>
+                <li>
+                  Melakukan edukasi dan pembinaan untuk meningkatkan kesadaran
+                  keamanan siber.
+                </li>
               </p>
             </div>
           </div>
