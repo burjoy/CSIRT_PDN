@@ -22,7 +22,7 @@ export const ArticleList = () => {
         <h1 class="text-center sm:text-3xl text-2xl font-medium title-font text-white">
           Berita Terkini
         </h1>
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-24 py-24 mx-auto">
           <div class="flex flex-wrap -mx-4 -my-8">
             <div
               ref={sliderRef}

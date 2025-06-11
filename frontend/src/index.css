@@ -1,9 +1,33 @@
 @import "tailwindcss";
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari and Opera */
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* For React-Pdf */
+.react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.react-pdf__Page {
+  margin: 1em 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.all-page-container {
+  height: 100%;
+  max-height: 500px;
+  overflow: auto;
 }
