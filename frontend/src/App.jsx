@@ -6,7 +6,7 @@ import Services from "../pages/Services";
 import Organisasi from "../pages/Organisasi";
 import Contact from "../pages/Contact";
 import Activity from "../pages/Activity";
-
+import { Rfc } from "../pages/Rfc";
 
 function App() {
   return (
@@ -20,6 +20,10 @@ function App() {
           <Route
             path="*"
             element={<NotFound />}
+          />
+          <Route
+            path="/rfc"
+            element={<Rfc />}
           />
           <Route
             path="/services"

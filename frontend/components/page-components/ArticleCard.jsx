@@ -1,7 +1,7 @@
 export const ArticleCard = ({ title, desc, month, day, category, author }) => {
   return (
     <div class="keen-slider__slide bg-gray-700 rounded-lg py-8 px-4 lg:w-1/3">
-      <div class="h-full flex items-start">
+      <div class="max-h-60 flex items-start">
         <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
           <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">
             {month}
@@ -17,7 +17,9 @@ export const ArticleCard = ({ title, desc, month, day, category, author }) => {
           <h1 class="title-font text-xl font-medium text-white mb-3">
             {title}
           </h1>
-          <p class="leading-relaxed mb-5 text-white">{desc}</p>
+          <p class="max-h-60 max-w-100 line-clamp-5 leading-relaxed mb-5 text-white">
+            {desc}
+          </p>
           <a class="inline-flex items-center">
             <img
               alt="blog"
