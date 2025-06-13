@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import Logo from "../src/assets/Logo_komdigi.png";
+import {Drawer, Box} from "@mui/material"
+import { useState } from "react";
 
 //Komponen header
 const Header = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
     <section class="bg-gray-900 overflow-hidden pb-2 px-4 md:px-8">
       <header class="flex mx-auto justify-between items-center max-w-[1300px] py-4 ">
@@ -54,7 +57,7 @@ const Header = () => {
             <span class="relative z-10">KONTAK</span>
           </Link>
         </div>
-        <button class="sm:hidden inline-block">
+        <button class="sm:hidden inline-block hover:bg-gray-800 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" onClick={() => setIsDrawerOpen(true)}>
           <svg
             width="33"
             height="26"
@@ -129,6 +132,51 @@ const Header = () => {
             </defs>
           </svg>
         </button>
+        <Drawer anchor="right" open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+          <Box
+            sx={{
+              width: 250,
+              backgroundColor: "#1a1a1a",
+              color: "#fff",
+              height: "100%",
+            }}
+            role="presentation"
+          >
+            <nav class="flex flex-col gap-3 p-4">
+              <Link
+                to="/"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                Beranda
+              </Link>
+              <Link
+                to="/organisasi"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                Profil
+              </Link>
+              <Link
+                to="/rfc"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                RFC 2350
+              </Link>
+              <Link
+                to="/services"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                Layanan
+              </Link>
+              <Link
+                to="/activity"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                Kegiatan
+              </Link>
+            </nav>
+          </Box>
+
+        </Drawer>
       </header>
     </section>
   );
