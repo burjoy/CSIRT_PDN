@@ -1,38 +1,71 @@
-export const ArticleCard = ({ title, desc, month, day, category, author }) => {
+import { User } from 'lucide-react';
+
+const ArticleCard = ({ 
+  title, 
+  desc, 
+  month, 
+  day, 
+  category, 
+  author, 
+  image 
+}) => {
   return (
-    <div class="keen-slider__slide bg-gray-700 rounded-lg py-8 px-4 lg:w-1/3">
-      <div class="max-h-60 flex items-start">
-        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-          <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">
-            {month}
-          </span>
-          <span class="font-medium text-lg text-white title-font leading-none">
-            {day}
+    <div className="keen-slider__slide">
+      <article className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 h-full shadow-xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+        {/* Header with date and category */}
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex items-center space-x-4">
+            <div className="text-center">
+              <div className="text-slate-400 text-xs font-medium uppercase tracking-wider">
+                {month}
+              </div>
+              <div className="text-white text-2xl font-bold">
+                {day}
+              </div>
+            </div>
+            <div className="h-12 w-px bg-gradient-to-b from-slate-600 to-transparent"></div>
+          </div>
+          <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-blue-500/30">
+            {category}
           </span>
         </div>
-        <div class="flex-grow pl-6">
-          <h2 class="tracking-widest text-xs title-font font-medium text-blue-500 mb-1">
-            {category}
-          </h2>
-          <h1 class="title-font text-xl font-medium text-white mb-3">
+
+        {/* Article image */}
+        {image && (
+          <div className="mb-4 overflow-hidden rounded-xl">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-32 object-cover transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+        )}
+
+        {/* Content */}
+        <div className="flex-grow">
+          <h2 className="text-white text-lg font-bold mb-3 line-clamp-2 hover:text-blue-300 transition-colors duration-200">
             {title}
-          </h1>
-          <p class="max-h-60 max-w-100 line-clamp-5 leading-relaxed mb-5 text-white">
+          </h2>
+          <p className="text-slate-300 text-sm leading-relaxed mb-4 line-clamp-3">
             {desc}
           </p>
-          <a class="inline-flex items-center">
-            <img
-              alt="blog"
-              src="https://dummyimage.com/103x103"
-              class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
-            />
-            <span class="flex-grow flex flex-col pl-3">
-              <span class="title-font font-medium text-white">{author}</span>
-            </span>
-          </a>
         </div>
-      </div>
+
+        {/* Author */}
+        <div className="flex items-center pt-4 border-t border-slate-700/50">
+          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+            <User size={14} className="text-white" />
+          </div>
+          <div className="ml-3">
+            <span className="text-slate-200 text-sm font-medium">{author}</span>
+          </div>
+          <div className="ml-auto">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          </div>
+        </div>
+      </article>
     </div>
   );
 };
+
 export default ArticleCard;

@@ -1,4 +1,4 @@
-import { ArticleList } from "../components/lists/ArticleList";
+import  ArticleList  from "../components/lists/ArticleList";
 import Report from "../src/assets/Report.svg";
 import Hacker from "../src/assets/Hacker.svg";
 import Eye from "../src/assets/Eye.svg";
