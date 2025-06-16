@@ -67,7 +67,17 @@ const Services = () => {
           Unduh Dokumen Panduan Keamanan
         </button>
       </section>
-      <ArticleList />
+      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">
+          Berita terkini
+        </h1>
+        <div className="flex mt-6 justify-center pb-8">
+          <div className="w-16 h-1 rounded-full bg-violet-600 inline-flex"></div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <ArticleList homeRendered={false}/>
+        </div>
+      </div>
     </>
   );
 };
