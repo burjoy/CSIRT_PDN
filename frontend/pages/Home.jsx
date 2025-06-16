@@ -152,7 +152,7 @@ const Home = () => {
             </div>
 
             {/* Dots indicator */}
-            {/* {loaded && instanceRef.current && (
+            {loaded && instanceRef.current && (
               <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
                 {[
                   ...Array(
@@ -169,11 +169,11 @@ const Home = () => {
                         ? "bg-blue-400 w-6 sm:w-8"
                         : "bg-slate-600 hover:bg-slate-500 w-2"
                     }`}
-                    aria-label={Go to slide ${idx + 1}}
+                    aria-label={`Go to slide ${idx + 1}`}
                   />
                 ))}
               </div>
-            )} */}
+            )}
           </div>
 
           {/* View All Button */}
