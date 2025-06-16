@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "../src/assets/Logo_komdigi.png";
 import {Drawer, Box} from "@mui/material"
 import { useState } from "react";
+import { House, ScrollText, Activity, User, HandHeart } from "lucide-react";
 
 //Komponen header
 const Header = () => {
@@ -143,36 +144,67 @@ const Header = () => {
             role="presentation"
           >
             <nav class="flex flex-col gap-3 p-4">
-              <Link
+              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <House className="mr-1" size={24}/>
+                <span class="text-xl text-white font-medium">
+                  <Link
                 to="/"
                 class="text-xl text-white font-medium hover:text-violet-600"
               >
                 Beranda
-              </Link>
-              <Link
-                to="/organisasi"
-                class="text-xl text-white font-medium hover:text-violet-600"
-              >
-                Profil
-              </Link>
-              <Link
+                </Link>
+              </span>
+              </div>
+        
+              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <User size={24} className={"mr-1"}/>
+                <span>
+                  <Link
+                    to="/organisasi"
+                    class="text-xl text-white font-medium hover:text-violet-600"
+                  >
+                    Profil
+                  </Link>
+                </span>
+              </div>
+              
+
+              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <ScrollText className="mr-1" size={24}/>
+                <span>
+                  <Link
                 to="/rfc"
                 class="text-xl text-white font-medium hover:text-violet-600"
               >
                 RFC 2350
-              </Link>
-              <Link
-                to="/services"
-                class="text-xl text-white font-medium hover:text-violet-600"
-              >
-                Layanan
-              </Link>
-              <Link
-                to="/activity"
-                class="text-xl text-white font-medium hover:text-violet-600"
-              >
-                Kegiatan
-              </Link>
+                </Link>
+              </span>
+              </div>
+              
+              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <HandHeart className="mr-1" size={24}/>
+                <span>
+                  <Link
+                    to="/services"
+                    class="text-xl text-white font-medium hover:text-violet-600"
+                  >
+                    Layanan
+                  </Link>
+                </span>
+              </div>
+
+              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <Activity className="mr-1" size={24} />
+                <span>
+                  <Link
+                    to="/activity"
+                    class="text-xl text-white font-medium hover:text-violet-600"
+                  >
+                    Kegiatan
+                  </Link>
+                </span>
+              </div>
+
             </nav>
           </Box>
 
