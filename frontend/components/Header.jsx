@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "../src/assets/Logo_komdigi.png";
 import { Drawer, Box } from "@mui/material";
 import { useState } from "react";
-import { House, ScrollText, Activity, User, HandHeart } from "lucide-react";
+import { House, ScrollText, Activity, User, HandHeart, Phone } from "lucide-react";
 
 //Komponen header
 const Header = () => {
@@ -144,6 +144,17 @@ const Header = () => {
                     class="text-xl text-white font-medium hover:text-violet-600"
                   >
                     Kegiatan
+                  </Link>
+                </span>
+              </div>
+              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <Phone className="mr-1" size={24}/>
+                <span>
+                  <Link
+                    to="/contact"
+                    class="text-xl text-white font-medium hover:text-violet-600"
+                  >
+                    Kontak Kami
                   </Link>
                 </span>
               </div>
