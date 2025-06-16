@@ -1,6 +1,6 @@
 const Organisasi = () => {
   return (
-    <section class="bg-gray-900 text-white body-font">
+    <section class="bg-gradient-to-br from-slate-800 to-slate-900 text-white body-font">
       <div class="container px-5 py-5 mx-auto flex flex-col">
         <div class="lg:w-4/6 mx-auto">
           <div class="rounded-lg h-64 overflow-hidden">
