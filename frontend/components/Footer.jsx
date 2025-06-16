@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer class="w-full bg-gray-900">
+    <footer class="w-full bg-gradient-to-br from-slate-800 to-slate-900">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
           <h1 class="text-white font-bold font text-2xl">CSIRT-PDN</h1>
