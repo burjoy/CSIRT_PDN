@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../src/assets/Logo_komdigi.png";
-import { Drawer, Box } from "@mui/material";
+import {Drawer, Box} from "@mui/material"
 import { useState } from "react";
 import { House, ScrollText, Activity, User, HandHeart, Phone } from "lucide-react";
 
@@ -53,16 +53,87 @@ const Header = () => {
         <div class="hidden sm:flex gap-3 md:gap-5 lg:gap-9">
           <Link
             to="/contact"
-            class="relative flex bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base"
+            class="relative flex items-center justify-center uppercase font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-56"
           >
-            <span class="relative z-10">Kontak</span>
+            <span class="relative z-10">KONTAK</span>
           </Link>
         </div>
-        <Drawer
-          anchor="right"
-          open={isDrawerOpen}
-          onClose={() => setIsDrawerOpen(false)}
-        >
+        <button class="sm:hidden inline-block hover:bg-gray-800 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" onClick={() => setIsDrawerOpen(true)}>
+          <svg
+            width="33"
+            height="26"
+            viewBox="0 0 33 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="33"
+              height="3.71429"
+              rx="1.85714"
+              fill="url(#paint0_linear_13_83)"
+            ></rect>
+            <rect
+              y="22.2857"
+              width="33"
+              height="3.71429"
+              rx="1.85714"
+              fill="url(#paint1_linear_13_83)"
+            ></rect>
+            <rect
+              x="9"
+              y="11.1429"
+              width="24"
+              height="3.71429"
+              rx="1.85714"
+              fill="url(#paint2_linear_13_83)"
+            ></rect>
+            <defs>
+              <linearGradient
+                id="paint0_linear_13_83"
+                x1="-8.62252e-09"
+                y1="3.46667"
+                x2="36.0395"
+                y2="3.46666"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#C0B7E8"></stop>
+                <stop
+                  offset="1"
+                  stopColor="#8176AF"
+                ></stop>
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_13_83"
+                x1="-3.90789"
+                y1="26"
+                x2="33"
+                y2="26"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#C0B7E8"></stop>
+                <stop
+                  offset="1"
+                  stopColor="#8176AF"
+                ></stop>
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_13_83"
+                x1="5.21062"
+                y1="13"
+                x2="33.0001"
+                y2="13"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#C0B7E8"></stop>
+                <stop
+                  offset="1"
+                  stopColor="#8176AF"
+                ></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </button>
+        <Drawer anchor="right" open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
           <Box
             sx={{
               width: 250,
@@ -74,25 +145,19 @@ const Header = () => {
           >
             <nav class="flex flex-col gap-3 p-4">
               <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <House
-                  className="mr-1"
-                  size={24}
-                />
+                <House className="mr-1" size={24}/>
                 <span class="text-xl text-white font-medium">
                   <Link
-                    to="/"
-                    class="text-xl text-white font-medium hover:text-violet-600"
-                  >
-                    Beranda
-                  </Link>
-                </span>
+                to="/"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                Beranda
+                </Link>
+              </span>
               </div>
-
+        
               <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <User
-                  size={24}
-                  className={"mr-1"}
-                />
+                <User size={24} className={"mr-1"}/>
                 <span>
                   <Link
                     to="/organisasi"
@@ -102,27 +167,22 @@ const Header = () => {
                   </Link>
                 </span>
               </div>
+              
 
               <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <ScrollText
-                  className="mr-1"
-                  size={24}
-                />
+                <ScrollText className="mr-1" size={24}/>
                 <span>
                   <Link
-                    to="/rfc"
-                    class="text-xl text-white font-medium hover:text-violet-600"
-                  >
-                    RFC 2350
-                  </Link>
-                </span>
+                to="/rfc"
+                class="text-xl text-white font-medium hover:text-violet-600"
+              >
+                RFC 2350
+                </Link>
+              </span>
               </div>
-
+              
               <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <HandHeart
-                  className="mr-1"
-                  size={24}
-                />
+                <HandHeart className="mr-1" size={24}/>
                 <span>
                   <Link
                     to="/services"
@@ -134,10 +194,7 @@ const Header = () => {
               </div>
 
               <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <Activity
-                  className="mr-1"
-                  size={24}
-                />
+                <Activity className="mr-1" size={24} />
                 <span>
                   <Link
                     to="/activity"
@@ -147,6 +204,7 @@ const Header = () => {
                   </Link>
                 </span>
               </div>
+
               <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
                 <Phone className="mr-1" size={24}/>
                 <span>
@@ -158,8 +216,10 @@ const Header = () => {
                   </Link>
                 </span>
               </div>
+
             </nav>
           </Box>
+
         </Drawer>
       </header>
     </section>
