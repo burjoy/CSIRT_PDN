@@ -14,7 +14,7 @@ const ArticleCard = ({
 }) => {
   // const [state, dispatch] = useReducer(StateReducer, initial_state);
   return (
-    <div className={homeRendered ? "keen-slider__slide" : "w-1/2 md:w-1/3 lg:w-1/4 p-4"}>
+    <div className={homeRendered ? "keen-slider__slide" : "xl:w-1/4 md:w-1/2 p-4"}>
       <article className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 h-full shadow-xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
         {/* Header with date and category */}
         <div className="flex items-start justify-between mb-4">
