@@ -11,7 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
-export const Rfc = () => {
+const Rfc = () => {
   const [numPages, setNumPages] = useState(0);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -75,3 +75,4 @@ export const Rfc = () => {
     </section>
   );
 };
+export default Rfc;

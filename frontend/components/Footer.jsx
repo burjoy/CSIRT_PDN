@@ -2,23 +2,23 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer class="w-full bg-gradient-to-br from-slate-800 to-slate-900">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
-          <h1 class="text-white font-bold font text-2xl">CSIRT-PDN</h1>
-          <ul class="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
+    <footer className="w-full bg-gradient-to-br from-slate-800 to-slate-900">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
+          <h1 className="text-white font-bold font text-2xl">CSIRT-PDN</h1>
+          <ul className="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
             <li>
               <Link
                 to="/home"
-                class="text-white hover:text-gray-400"
+                className="text-white hover:text-gray-400"
               >
                 Beranda
               </Link>
             </li>
-            <li class="sm:my-0 my-2">
+            <li className="sm:my-0 my-2">
               <Link
                 to="/organisasi"
-                class="text-white hover:text-gray-400"
+                className="text-white hover:text-gray-400"
               >
                 Tentang
               </Link>
@@ -26,15 +26,15 @@ const Footer = () => {
             <li>
               <Link
                 to="/rfc"
-                class="text-white hover:text-gray-400"
+                className="text-white hover:text-gray-400"
               >
                 CSIRT-PDN
               </Link>
             </li>
-            <li class="sm:my-0 my-2">
+            <li className="sm:my-0 my-2">
               <Link
                 to="/services"
-                class="text-white hover:text-gray-400"
+                className="text-white hover:text-gray-400"
               >
                 Layanan
               </Link>
@@ -42,16 +42,16 @@ const Footer = () => {
             <li>
               <Link
                 to="/activity"
-                class="text-white hover:text-gray-400"
+                className="text-white hover:text-gray-400"
               >
                 Kegiatan
               </Link>
             </li>
           </ul>
-          <div class="flex  space-x-4 sm:justify-center  ">
+          <div className="flex  space-x-4 sm:justify-center  ">
             <a
               href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
+              className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +69,10 @@ const Footer = () => {
             </a>
             <a
               href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
+              className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
             >
               <svg
-                class="w-[1.25rem] h-[1.125rem] text-white"
+                className="w-[1.25rem] h-[1.125rem] text-white"
                 viewBox="0 0 15 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,10 +85,10 @@ const Footer = () => {
             </a>
             <a
               href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
+              className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
             >
               <svg
-                class="w-[1rem] h-[1rem] text-white"
+                className="w-[1rem] h-[1rem] text-white"
                 viewBox="0 0 13 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,10 +101,10 @@ const Footer = () => {
             </a>
             <a
               href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
+              className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
             >
               <svg
-                class="w-[1.25rem] h-[0.875rem] text-white"
+                className="w-[1.25rem] h-[0.875rem] text-white"
                 viewBox="0 0 16 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,9 +119,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div class="py-7 border-t border-gray-700">
-          <div class="flex items-center justify-center">
-            <span class="text-gray-400 ">
+        <div className="py-7 border-t border-gray-700">
+          <div className="flex items-center justify-center">
+            <span className="text-gray-400 ">
               ©{new Date().getFullYear()} Komdigi. All rights reserved.
             </span>
           </div>

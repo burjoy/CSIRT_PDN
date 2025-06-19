@@ -6,7 +6,8 @@ import Services from "../pages/Services";
 import Organisasi from "../pages/Organisasi";
 import Contact from "../pages/Contact";
 import Activity from "../pages/Activity";
-import { Rfc } from "../pages/Rfc";
+import Rfc from "../pages/Rfc";
+import Article from "../pages/Article";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
           <Route
             path="/services"
             element={<Services />}
+          />
+          <Route
+            path="/article/:slug"
+            element={<Article />}
           />
           <Route
             path="/organisasi"
