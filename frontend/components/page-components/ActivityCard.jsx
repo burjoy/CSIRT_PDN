@@ -1,4 +1,4 @@
-import { User, Calendar, Tag } from "lucide-react";
+import { User, Calendar } from "lucide-react";
 
 const ActivityCard = ({ img, title, subtitle, desc, month, day, author }) => {
   return (
@@ -18,7 +18,6 @@ const ActivityCard = ({ img, title, subtitle, desc, month, day, author }) => {
             <div className="h-10 sm:h-12 w-px bg-gradient-to-b from-slate-600 to-transparent"></div>
           </div>
           <div className="flex items-center">
-            <Tag className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 mr-1 sm:mr-2" />
             <span className="bg-blue-500/20 text-blue-300 px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-blue-500/30">
               {subtitle}
             </span>
