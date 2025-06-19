@@ -1,2 +1,4 @@
 node_modules/
 .env
+model/mode_user.json
+model/model_tamu.jsonl
