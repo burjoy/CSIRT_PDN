@@ -6,23 +6,23 @@ const Contact = () => {
   const handleSendData = async () => {
     try {
       const params = {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           instansi: state.name,
           email: state.email,
           pesan: [state.message],
-          waktu: [new Date().toISOString()]
-      })}
-      const response = await fetch('http://localhost:3000/forms', params);
+          waktu: [new Date().toISOString()],
+        }),
+      };
+      const response = await fetch("http://localhost:3000/forms", params);
       console.log(response);
     } catch (error) {
       console.error("Error sending data:", error);
-      
     }
-  }
+  };
   return (
     <section class="bg-gray-900 text-gray-600 body-font relative">
       <div class="bg-gray-900 rounded-md container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -74,7 +74,9 @@ const Contact = () => {
               name="name"
               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               required
-              onChange={(e) => dispatch({ type: 'SET_NAME', payload: e.target.value })}
+              onChange={(e) =>
+                dispatch({ type: "SET_NAME", payload: e.target.value })
+              }
             />
           </div>
           <div class="relative mb-4">
@@ -90,7 +92,9 @@ const Contact = () => {
               name="email"
               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               required
-              onChange={(e) => dispatch({ type: 'SET_EMAIL', payload: e.target.value })}
+              onChange={(e) =>
+                dispatch({ type: "SET_EMAIL", payload: e.target.value })
+              }
             />
           </div>
           <div class="relative mb-4">
@@ -105,13 +109,19 @@ const Contact = () => {
               name="message"
               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               required
-              onChange={(e) => dispatch({ type: 'SET_MESSAGE', payload: e.target.value })}
+              onChange={(e) =>
+                dispatch({ type: "SET_MESSAGE", payload: e.target.value })
+              }
             ></textarea>
           </div>
-          <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" onClick={() => {
-            handleSendData();
-            dispatch({ type: 'RESET_FORM' });
-            console.log(state);}}>
+          <button
+            class="text-white bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base"
+            onClick={() => {
+              handleSendData();
+              dispatch({ type: "RESET_FORM" });
+              console.log(state);
+            }}
+          >
             Kirim
           </button>
           <p class="text-xs text-gray-500 mt-3">
