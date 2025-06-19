@@ -96,7 +96,7 @@ const Services = () => {
         <div className="flex mt-6 justify-center pb-8">
           <div className="w-16 h-1 rounded-full bg-violet-600 inline-flex"></div>
         </div>
-        <div class="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4">
           <ArticleList homeRendered={false} />
         </div>
       </div>

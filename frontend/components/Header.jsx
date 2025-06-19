@@ -1,64 +1,74 @@
 import { Link } from "react-router-dom";
 import Logo from "../src/assets/Logo_komdigi.png";
-import {Drawer, Box} from "@mui/material"
+import { Drawer, Box } from "@mui/material";
 import { useState } from "react";
-import { House, ScrollText, Activity, User, HandHeart, Phone } from "lucide-react";
+import {
+  House,
+  ScrollText,
+  Activity,
+  User,
+  HandHeart,
+  Phone,
+} from "lucide-react";
 
 //Komponen header
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
-    <section class="bg-gray-900 overflow-hidden pb-2 px-4 md:px-8">
-      <header class="flex mx-auto justify-between items-center max-w-[1300px] py-4 ">
-        <div class="flex items-center gap-3">
+    <section className="bg-gray-900 overflow-hidden pb-2 px-4 md:px-8">
+      <header className="flex mx-auto justify-between items-center max-w-[1300px] py-4 ">
+        <div className="flex items-center gap-3">
           <img
-            class="w-20"
+            className="w-20"
             src={Logo}
           ></img>
         </div>
-        <nav class="hidden sm:inline-block">
-          <ul class="flex gap-3 md:gap-5 lg:gap-10">
+        <nav className="hidden sm:inline-block">
+          <ul className="flex gap-3 md:gap-5 lg:gap-10">
             <Link
               to="/"
-              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Beranda
             </Link>
             <Link
               to="/organisasi"
-              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Profil
             </Link>
             <Link
               to="/rfc"
-              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               RFC 2350
             </Link>
             <Link
               to="/services"
-              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Layanan
             </Link>
             <Link
               to="/activity"
-              class="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
+              className="relative inline cursor-pointer text-xl text-white font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100"
             >
               Kegiatan
             </Link>
           </ul>
         </nav>
-        <div class="hidden sm:flex gap-3 md:gap-5 lg:gap-9">
+        <div className="hidden sm:flex gap-3 md:gap-5 lg:gap-9">
           <Link
             to="/contact"
-            class="relative flex items-center justify-center uppercase font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-56"
+            className="relative flex items-center justify-center uppercase font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-56"
           >
-            <span class="relative z-10">KONTAK</span>
+            <span className="relative z-10">KONTAK</span>
           </Link>
         </div>
-        <button class="sm:hidden inline-block hover:bg-gray-800 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" onClick={() => setIsDrawerOpen(true)}>
+        <button
+          className="sm:hidden inline-block hover:bg-gray-800 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+          onClick={() => setIsDrawerOpen(true)}
+        >
           <svg
             width="33"
             height="26"
@@ -133,7 +143,11 @@ const Header = () => {
             </defs>
           </svg>
         </button>
-        <Drawer anchor="right" open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+        <Drawer
+          anchor="right"
+          open={isDrawerOpen}
+          onClose={() => setIsDrawerOpen(false)}
+        >
           <Box
             sx={{
               width: 250,
@@ -143,83 +157,98 @@ const Header = () => {
             }}
             role="presentation"
           >
-            <nav class="flex flex-col gap-3 p-4">
-              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <House className="mr-1" size={24}/>
-                <span class="text-xl text-white font-medium">
+            <nav className="flex flex-col gap-3 p-4">
+              <div className="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <House
+                  classNameName="mr-1"
+                  size={24}
+                />
+                <span className="text-xl text-white font-medium">
                   <Link
-                to="/"
-                class="text-xl text-white font-medium hover:text-violet-600"
-              >
-                Beranda
-                </Link>
-              </span>
+                    to="/"
+                    className="text-xl text-white font-medium hover:text-violet-600"
+                  >
+                    Beranda
+                  </Link>
+                </span>
               </div>
-        
-              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <User size={24} className={"mr-1"}/>
+
+              <div className="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <User
+                  size={24}
+                  classNameName={"mr-1"}
+                />
                 <span>
                   <Link
                     to="/organisasi"
-                    class="text-xl text-white font-medium hover:text-violet-600"
+                    className="text-xl text-white font-medium hover:text-violet-600"
                   >
                     Profil
                   </Link>
                 </span>
               </div>
-              
 
-              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <ScrollText className="mr-1" size={24}/>
+              <div className="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <ScrollText
+                  classNameName="mr-1"
+                  size={24}
+                />
                 <span>
                   <Link
-                to="/rfc"
-                class="text-xl text-white font-medium hover:text-violet-600"
-              >
-                RFC 2350
-                </Link>
-              </span>
+                    to="/rfc"
+                    className="text-xl text-white font-medium hover:text-violet-600"
+                  >
+                    RFC 2350
+                  </Link>
+                </span>
               </div>
-              
-              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <HandHeart className="mr-1" size={24}/>
+
+              <div className="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <HandHeart
+                  classNameName="mr-1"
+                  size={24}
+                />
                 <span>
                   <Link
                     to="/services"
-                    class="text-xl text-white font-medium hover:text-violet-600"
+                    className="text-xl text-white font-medium hover:text-violet-600"
                   >
                     Layanan
                   </Link>
                 </span>
               </div>
 
-              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <Activity className="mr-1" size={24} />
+              <div className="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <Activity
+                  classNameName="mr-1"
+                  size={24}
+                />
                 <span>
                   <Link
                     to="/activity"
-                    class="text-xl text-white font-medium hover:text-violet-600"
+                    className="text-xl text-white font-medium hover:text-violet-600"
                   >
                     Kegiatan
                   </Link>
                 </span>
               </div>
 
-              <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
-                <Phone className="mr-1" size={24}/>
+              <div className="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+                <Phone
+                  classNameName="mr-1"
+                  size={24}
+                />
                 <span>
                   <Link
                     to="/contact"
-                    class="text-xl text-white font-medium hover:text-violet-600"
+                    className="text-xl text-white font-medium hover:text-violet-600"
                   >
                     Kontak Kami
                   </Link>
                 </span>
               </div>
-
             </nav>
           </Box>
-
         </Drawer>
       </header>
     </section>
