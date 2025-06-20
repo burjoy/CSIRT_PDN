@@ -34,13 +34,13 @@ const authController = async (req, res) => {
                     role: roles
                 }, 
                 process.env.ACCESS_TOKEN_SECRET,
-                {expiresIn: '5s'},
+                {expiresIn: '60s'},
             );
 
             const refreshToken = jwt.sign(
                 { username: foundUser.username }, 
                 process.env.REFRESH_TOKEN_SECRET,
-                {expiresIn: '10s'},
+                {expiresIn: '180s'},
             );
 
             const otherUser = usersDB.user.filter((name) => name.username !== username);
