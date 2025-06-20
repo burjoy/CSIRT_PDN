@@ -43,6 +43,7 @@ app.get('/google/auth/callback', LoginGoogleController);
 
 app.use('/forms', require('./routes/uploadForm'));
 app.use('/register', require('./routes/register'));
+app.use('/auth', require('./routes/auth'));
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
