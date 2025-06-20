@@ -6,6 +6,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const port = 3000;
 const {LoginGoogleController} = require('./controller/GoogleLoginController');
+const verfifyJWT = require('./middleware/verifyJWT');
 
 const oauth2Client = new google.auth.OAuth2(
   process.env.GOOGLE_CLIENT_ID,
@@ -44,6 +45,10 @@ app.get('/google/auth/callback', LoginGoogleController);
 app.use('/forms', require('./routes/uploadForm'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
+app.use(verfifyJWT);
+app.get('/test_protected', (req, res) => {
+  res.status(200).json({ message: "You have access to this protected route!" });
+}); //This route is for testing only, remove in production
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
