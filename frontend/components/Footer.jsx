@@ -9,7 +9,7 @@ const Footer = () => {
           <ul className="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
             <li>
               <Link
-                to="/home"
+                to=""
                 className="text-white hover:text-gray-400"
               >
                 Beranda
