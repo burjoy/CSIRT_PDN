@@ -14,11 +14,18 @@ const jwt = require('jsonwebtoken');
 const RegisterController = async (req, res) => {
     try {
         //ambil username ama pass dari request client
-        const { username, password } = req.body;
+        const { username, password, email } = req.body;
+        //Warning untuk cek apakah ada data yang kosong
+        if(!username || !password || !email) {
+            return res.status(400).json({ message: "Username, password, dan email harus diisi" });
+        }
         const foundUser = usersDB.user.find((name) => name.username === username);
         //cek apakah ada user yang sama di db
         if (foundUser) {
             return res.status(409).json({ message: `Username ${username} sudah ada` });
+        }
+        if( usersDB.user.find((user) => user.email === email)) {
+            return res.status(409).json({ message: `Email ${email} sudah terdaftar` });
         }
         //kalo gk ada user yang sama, encrypt pass user + salt
         try {
@@ -26,7 +33,8 @@ const RegisterController = async (req, res) => {
             const newUser = {
                 username: username,
                 role: {User: 3009},
-                password: pass
+                password: pass,
+                email: email,
             }
             const roles = Object.values(newUser.role);
             const accessToken = jwt.sign(
